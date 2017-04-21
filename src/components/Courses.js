@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { NavLink } from 'react-router-dom';
 
 class Courses extends Component {
   render() {
@@ -7,12 +8,11 @@ class Courses extends Component {
         <div className="course-header group">
           <h2>Courses</h2> 
           <ul className="course-nav">
-            <li><a href="/courses/html">HTML</a></li>
-            <li><a href="/courses/css">CSS</a></li>
-            <li><a href="/courses/javascript">JavaScript</a></li>
+            <li><NavLink to="/courses/html">HTML</NavLink></li>
+            <li><NavLink to="/courses/css">CSS</NavLink></li>
+            <li><NavLink to="/courses/javascript">JavaScript</NavLink></li>
           </ul>
         </div>
-        
       </div>
     );
   }

@@ -9,4 +9,4 @@ import './css/style.css';
 import routes from './router';
 
 // Render
-render(routes, document.getElementById('root'));
+render(routes, document.getElementById('root'))

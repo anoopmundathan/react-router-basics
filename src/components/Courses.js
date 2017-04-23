@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Route, NavLink } from 'react-router-dom';
+import { Route, NavLink, Switch, Redirect} from 'react-router-dom';
 
 import Course from './courses/Course';
 import CSS from './courses/CSS';
@@ -18,9 +18,14 @@ class Courses extends Component {
             <li><NavLink to="/courses/javascript">JavaScript</NavLink></li>
           </ul>
         </div>
-        <Route path="/courses/html" component={HTML}/>
-        <Route path="/courses/css" component={CSS}/>
-        <Route path="/courses/javascript" component={JavaScript}/>
+          
+          {/*<Redirect from="/courses" to="/courses/html" />*/}
+          <Route path="/courses" render={() => (
+            <Redirect to="/courses/html" />
+          )} />
+          <Route path="/courses/html" component={HTML}/>
+          <Route path="/courses/css" component={CSS}/>
+          <Route path="/courses/javascript" component={JavaScript}/>
       </div>
     );
   }

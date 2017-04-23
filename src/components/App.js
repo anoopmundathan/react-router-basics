@@ -8,7 +8,6 @@ class App extends Component {
         <header>
           <span className="icn-logo"><i className="material-icons">code</i></span>
           <ul className="main-nav">
-
             <li><NavLink to="/" activeClassName = "active">Home</NavLink></li>
             <li><NavLink to="/about" activeClassName = "active">About</NavLink></li>
             <li><NavLink to="/teachers" activeClassName = "active">Teachers</NavLink></li>

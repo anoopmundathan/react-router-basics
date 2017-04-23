@@ -8,6 +8,7 @@ import Home from './components/Home';
 import Courses from './components/Courses';
 import Teachers from './components/Teachers';
 import About from './components/About';
+import NotFound from './components/NotFound';
 
 // Routes
 const routes = (
@@ -18,6 +19,7 @@ const routes = (
         <Route path="/about" component={About} />
         <Route path="/teachers" component={Teachers} />
         <Route path="/courses" component={Courses} />
+        <Route path="*" component={NotFound} />
       </App>
     </div>
   </Router>
